@@ -1,0 +1,421 @@
+% Latex note Header
+% Author: Alex 
+% Version 2.0
+% add colorful text package
+% September 19, 2019.
+%%%%%%%%%%%%%%%%%%%%%%%%%% NOTE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% packages
+\usepackage{xcolor}
+
+%convenient command for taking notes
+\definecolor{mygreen}{RGB}{0, 153, 76} 
+\definecolor{myred}{RGB}{204, 0, 0}
+
+\newcommand{\eg}[1]{\newline}
+\newcommand{\ans}[1]{\newline\textcolor{mygreen}{#1}}
+\newcommand{\impr}[1]{\textcolor{myred}{#1}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% MATH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{bbm}
+% \usepackage{mathabx}
+
+\usepackage{latexsym}
+
+\usepackage{faktor}
+\usepackage{tikz-cd}
+% \usetikzlibrary{babel}
+\usepackage{stmaryrd}
+%\usetikzlibrary{shapes, arrows}
+
+\newcommand{\Ito}{It\^{o} {}}
+
+
+%convenient command for mathy notes
+
+\renewcommand\qedsymbol{$blacksquare$}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{defination}{Defination}[section]
+\newtheorem{exercise}{Exercise}
+
+% Font Shortcuts
+\newcommand{\mf}[1]{\mathfrak{#1}} % Abbreviation for math fraktur. Do \mf{K} to get a fraktur font for K.
+\newcommand{\mb}[1]{\mathbb{#1}} % Abbreviation for math double struck. Do \mf{R} for the real numbers.
+\newcommand{\mc}[1]{\mathcal{#1}} % Abbreviation of math script. Do \mc{K} to get a script-like font for K.
+\newcommand{\ms}[1]{\mathscr{#1}}
+\newcommand{\set}[1]{{\left\{#1\right\}}} % Quick command for sets. Do \set{stuff}.
+
+% Double Struck Symbols
+\newcommand{\1}{\mathbbm{1}} % Indicator function.
+\newcommand{\A}{\mb{A}}
+\newcommand{\B}{\mb{B}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\D}{\mb{D}}
+\newcommand{\E}{\mb{E}}
+\newcommand{\F}{\mb{F}}
+\newcommand{\G}{\mb{G}}
+\renewcommand{\H}{\mb{H}}
+\newcommand{\I}{\mb{I}}
+\newcommand{\J}{\mb{J}}
+\newcommand{\K}{\mb{K}}
+\renewcommand{\L}{\mb{L}}
+\newcommand{\M}{\mb{M}}
+\newcommand{\N}{\mb{N}}
+\renewcommand{\O}{\mb{O}}
+\renewcommand{\P}{\mb{P}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\R}{\mb{R}}
+\renewcommand{\S}{\mb{S}}
+\newcommand{\T}{\mb{T}}
+\newcommand{\U}{\mb{U}}
+\newcommand{\V}{\mb{V}}
+\newcommand{\W}{\mb{W}}
+\newcommand{\X}{\mb{X}}
+\newcommand{\Y}{\mb{Y}}
+\newcommand{\Z}{\mb{Z}}
+
+% Calligraphic Symbols
+\newcommand{\cA}{\mc{A}}
+\newcommand{\cB}{\mc{B}}
+\newcommand{\cC}{\mc{C}}
+\newcommand{\cD}{\mc{D}}
+\newcommand{\cE}{\mc{E}}
+\newcommand{\cF}{\mc{F}}
+\newcommand{\cG}{\mc{G}}
+\newcommand{\cH}{\mc{H}}
+\newcommand{\cI}{\mc{I}}
+\newcommand{\cJ}{\mc{J}}
+\newcommand{\cK}{\mc{K}}
+\newcommand{\cL}{\mc{L}}
+\newcommand{\cM}{\mc{M}}
+\newcommand{\cN}{\mc{N}}
+\newcommand{\cO}{\mc{O}}
+\newcommand{\cP}{\mc{P}}
+\newcommand{\cQ}{\mc{Q}}
+\newcommand{\cR}{\mc{R}}
+\newcommand{\cS}{\mc{S}}
+\newcommand{\cT}{\mc{T}}
+\newcommand{\cU}{\mc{U}}
+\newcommand{\cV}{\mc{V}}
+\newcommand{\cW}{\mc{W}}
+\newcommand{\cX}{\mc{X}}
+\newcommand{\cY}{\mc{Y}}
+\newcommand{\cZ}{\mc{Z}}
+
+% Script Symbols
+\newcommand{\sA}{\ms{A}}
+\newcommand{\sB}{\ms{B}}
+\newcommand{\sC}{\ms{C}}
+\newcommand{\sD}{\ms{D}}
+\newcommand{\sE}{\ms{E}}
+\newcommand{\sF}{\ms{F}}
+\newcommand{\sG}{\ms{G}}
+\newcommand{\sH}{\ms{H}}
+\newcommand{\sI}{\ms{I}}
+\newcommand{\sJ}{\ms{J}}
+\newcommand{\sK}{\ms{K}}
+\newcommand{\sL}{\ms{L}}
+\newcommand{\sM}{\ms{M}}
+\newcommand{\sN}{\ms{N}}
+\newcommand{\sO}{\ms{O}}
+\newcommand{\sP}{\ms{P}}
+\newcommand{\sQ}{\ms{Q}}
+\newcommand{\sR}{\ms{R}}
+\newcommand{\sS}{\ms{S}}
+\newcommand{\sT}{\ms{T}}
+\newcommand{\sU}{\ms{U}}
+\newcommand{\sV}{\ms{V}}
+\newcommand{\sW}{\ms{W}}
+\newcommand{\sX}{\ms{X}}
+\newcommand{\sY}{\ms{Y}}
+\newcommand{\sZ}{\ms{Z}}
+
+
+
+% Fraktur Symbols
+\newcommand{\fA}{\mf{A}}
+\newcommand{\fB}{\mf{B}}
+\newcommand{\fC}{\mf{C}}
+\newcommand{\fD}{\mf{D}}
+\newcommand{\fE}{\mf{E}}
+\newcommand{\fF}{\mf{F}}
+\newcommand{\fG}{\mf{G}}
+\newcommand{\fH}{\mf{H}}
+\newcommand{\fI}{\mf{I}}
+\newcommand{\fJ}{\mf{J}}
+\newcommand{\fK}{\mf{K}}
+\newcommand{\fL}{\mf{L}}
+\newcommand{\fM}{\mf{M}}
+\newcommand{\fN}{\mf{N}}
+\newcommand{\fO}{\mf{O}}
+\newcommand{\fP}{\mf{P}}
+\newcommand{\fQ}{\mf{Q}}
+\newcommand{\fR}{\mf{R}}
+\newcommand{\fS}{\mf{S}}
+\newcommand{\fT}{\mf{T}}
+\newcommand{\fU}{\mf{U}}
+\newcommand{\fV}{\mf{V}}
+\newcommand{\fW}{\mf{W}}
+\newcommand{\fX}{\mf{X}}
+\newcommand{\fY}{\mf{Y}}
+\newcommand{\fZ}{\mf{Z}}
+\newcommand{\fa}{\mf{a}}
+\newcommand{\fb}{\mf{b}}
+\newcommand{\fc}{\mf{c}}
+\newcommand{\fd}{\mf{d}}
+\newcommand{\fe}{\mf{e}}
+\newcommand{\ff}{\mf{f}}
+\newcommand{\fg}{\mf{g}}
+\newcommand{\fh}{\mf{h}}
+\newcommand{\fii}{\mf{i}} % fi is a keyword that, if we override, will screw up a lot of stuff. So, we don't override it :)
+\newcommand{\fj}{\mf{j}}
+\newcommand{\fk}{\mf{k}}
+\newcommand{\fl}{\mf{l}}
+\newcommand{\fm}{\mf{m}}
+\newcommand{\fn}{\mf{n}}
+\newcommand{\fo}{\mf{o}}
+\newcommand{\fp}{\mf{p}}
+\newcommand{\fq}{\mf{q}}
+\newcommand{\fr}{\mf{r}}
+\newcommand{\fs}{\mf{s}}
+\newcommand{\ft}{\mf{t}}
+\newcommand{\fu}{\mf{u}}
+\newcommand{\fv}{\mf{v}}
+\newcommand{\fw}{\mf{w}}
+\newcommand{\fx}{\mf{x}}
+\newcommand{\fy}{\mf{y}}
+\newcommand{\fz}{\mf{z}}
+
+% Bold shortcuts
+
+% \newcommand{\bmA}{\bm{A}}
+% \newcommand{\bmB}{\bm{B}}
+% \newcommand{\bmC}{\bm{C}}
+% \newcommand{\bmD}{\bm{D}}
+% \newcommand{\bmE}{\bm{E}}
+% \newcommand{\bmF}{\bm{F}}
+% \newcommand{\bmG}{\bm{G}}
+% \newcommand{\bmH}{\bm{H}}
+% \newcommand{\bmI}{\bm{I}}
+% \newcommand{\bmJ}{\bm{J}}
+% \newcommand{\bmK}{\bm{K}}
+% \newcommand{\bmL}{\bm{L}}
+% \newcommand{\bmM}{\bm{M}}
+% \newcommand{\bmN}{\bm{N}}
+% \newcommand{\bmO}{\bm{O}}
+% \newcommand{\bmP}{\bm{P}}
+% \newcommand{\bmQ}{\bm{Q}}
+% \newcommand{\bmR}{\bm{R}}
+% \newcommand{\bmS}{\bm{S}}
+% \newcommand{\bmT}{\bm{T}}
+% \newcommand{\bmU}{\bm{U}}
+% \newcommand{\bmV}{\bm{V}}
+% \newcommand{\bmW}{\bm{W}}
+% \newcommand{\bmX}{\bm{X}}
+% \newcommand{\bmY}{\bm{Y}}
+% \newcommand{\bmZ}{\bm{Z}}
+% \newcommand{\bma}{\bm{a}}
+% \newcommand{\bmb}{\bm{b}}
+% \newcommand{\bmc}{\bm{c}}
+% \newcommand{\bmd}{\bm{d}}
+% \newcommand{\bme}{\bm{e}}
+% \newcommand{\bmf}{\bm{f}}
+% \newcommand{\bmg}{\bm{g}}
+% \newcommand{\bmh}{\bm{h}}
+% \newcommand{\bmi}{\bm{i}}
+% \newcommand{\bmj}{\bm{j}}
+% \newcommand{\bmk}{\bm{k}}
+% \newcommand{\bml}{\bm{l}}
+% \newcommand{\bmm}{\bm{m}}
+% \newcommand{\bmn}{\bm{n}}
+% \newcommand{\bmo}{\bm{o}}
+% \newcommand{\bmp}{\bm{p}}
+% \newcommand{\bmq}{\bm{q}}
+% \newcommand{\bmr}{\bm{r}}
+% \newcommand{\bms}{\bm{s}}
+% \newcommand{\bmt}{\bm{t}}
+% \newcommand{\bmu}{\bm{u}}
+% \newcommand{\bmv}{\bm{v}}
+% \newcommand{\bmw}{\bm{w}}
+% \newcommand{\bmx}{\bm{x}}
+% \newcommand{\bmy}{\bm{y}}
+% \newcommand{\bmz}{\bm{z}}
+
+
+
+\newcommand{\Lsimp}{\cL^{\text{simp}}}
+
+
+\newcommand{\RP}[1]{\R P^{#1}}
+\newcommand{\CP}[1]{\C P^{#1}}
+
+
+\newcommand{\GL}[2][\R]{{\text{GL}(#2, #1)}}
+\newcommand{\SL}[2][\R]{{\text{SL}(#2, #1)}}
+\newcommand{\SO}[1]{{\text{SO}(#1)}}
+\newcommand{\SU}[1]{{\text{SU}(#1)}}
+\newcommand{\OO}[1]{{\text{O}(#1)}}
+\newcommand{\UU}[1]{{\text{U}(#1)}}
+\newcommand{\Sp}[1]{{\text{Sp}(#1)}}
+\newcommand{\PGL}[2][\R]{{\text{PGL}(#2, #1)}}
+\newcommand{\PSL}[2][\R]{{\text{PSL}(#2, #1)}}
+
+
+\newcommand{\del}{\nabla} % Used to denote a covariant derivative in differential geometry.
+\newcommand{\transverse}{\pitchfork}
+% Symbol Modifiers
+\newcommand{\bs}{\backslash} % \
+\newcommand{\wh}{\widehat} % \hat looks bad, so just use \widehat!
+\newcommand{\wt}{\widetilde} % \tilde looks bad, so just use \widetilde! 
+\renewcommand{\bar}{\overline} % Puts a line over something, like complex conjugation.
+\newcommand{\ul}{\underline}
+\newcommand{\es}{\emptyset} % Empty set.
+\newcommand{\bcap}{\bigcap} % Large intersection shortcut.
+\newcommand{\bcup}{\bigcup} % Large union shortcut.
+\newcommand{\Wedge}{\bigwedge}
+\newcommand{\Oplus}{\bigoplus}
+\newcommand{\Otimes}{\bigotimes}
+
+\newcommand{\eval}{\bigg|} % Evaluation vertical line.
+
+% Encapsulating Shortcuts
+\newcommand{\abs}[1]{\left|#1\right|} % Quick command for absolute value. Do \abs{stuff}.
+\newcommand{\norm}[1]{\abs{\abs{#1}}} % Quick command for norms. Do \norm{stuff}.
+\newcommand{\lrp}[1]{\left(#1\right)} % ()
+\newcommand{\lrb}[1]{\left[#1\right]} % []
+\newcommand{\lrc}[1]{\left\langle#1\right\rangle} % <>
+\newcommand{\ket}[1]{\left\rvert#1\right\rangle} % | >
+\newcommand{\inner}[2]{\lrc{#1, #2}}
+\newcommand{\bra}[1]{\left\langle#1\right\rvert} % < |
+\newcommand{\braket}[2]{\left\langle#1\rvert#2\right\rangle} % < | >
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\inter}[1]{\overset{\circ}{#1}}
+
+
+% Common Objects
+\newcommand{\seq}[3][\N]{\lrp{{#2}_{#3}}_{#3 \in #1}} % Sequence. Args: (indexing set, symbols, index symbol). First argument optional. If no first argument is given, then the natural numbers are assumed to be the indexing set.
+
+\newcommand{\setseq}[3][\N]{\set{{#2}_{#3}}_{#3 \in #1}}
+
+
+% \newcommand{\seqv}[3]{\lrp{#1}_{#2}^{#3}} % Verbose sequence. Args: (symbols-with-subscripts, from, to)
+
+\newcommand{\ser}[3][\N]{\sum_{#3 \in #1} {#2}_{#3}} % Series. Args: (index set, symbols, index symbol). First argument optional. If no first argument is given, then the natural numbers are assumed to be the indexing set.
+
+\newcommand{\serv}[2]{\sum_{#1}^{#2}} % Verbose series. Args: (summand subscript, summand superscript)
+
+\newcommand{\pder}[3][]{\frac{\partial^{#1} #2}{\partial {#3}^{#1}}} % Partial derivative sign. Args: (order-of-derivative, what-your-differentiating, with-respect-to-this-variable) First argument is optional
+
+\newcommand{\der}[3][]{\frac{d^{#1} #2}{d{#3}^{#1}}} % Derivative sign. Args: (order-of-derivative, what-your-differentiating, with-respect-to-this-variable) First argument is optional
+
+
+\newcommand{\probspace}{\lrp{\Omega, \cF, \P}}
+
+\newcommand{\dfprobspace}{\lrp{\Omega, \cF, \martingale{\cF}{n} \P} }
+
+\newcommand{\martingale}[3][0]{{\lrp{#2_{#3}}}_{#3 \geq #1}}
+
+
+% Relations
+\newcommand{\la}{\leftarrow} % Thin arrow pointing to the left.
+\newcommand{\ra}{\rightarrow} % Thin arrow pointing to the right.
+\newcommand{\lra}{\leftrightarrow} % Double-sided thin arrow.
+\newcommand{\La}{\Leftarrow} % Right to left implication.
+\newcommand{\Ra}{\Rightarrow} % Left to right implication.
+\newcommand{\LRa}{\Leftrightarrow} % If and only if sign.
+\newcommand{\longla}{\longleftarrow} % Long thin arrow pointing to the left
+\newcommand{\longra}{\longrightarrow} % Long thin arrow pointing to the right
+\newcommand{\longlra}{\longleftrightarrow} % Long double-sided thin arrow 
+\newcommand{\longLa}{\Longleftarrow} % Long right to left implication
+\newcommand{\longRa}{\Longrightarrow} % Long left to right implication
+\newcommand{\longLRa}{\Longleftrightarrow} % Long if and only if sign.
+
+\newcommand{\acts}{\curvearrowright} % Group action
+\newcommand{\nsub}{\trianglelefteq} % Normal subgroup.
+
+% Math operators.
+\DeclareMathOperator{\Width}{Width}
+\DeclareMathOperator{\nul}{null} % nullspace
+\DeclareMathOperator{\ord}{ord} % order of a group element
+% \DeclareMathOperator{\GL}{GL} % general linear group
+% \DeclareMathOperator{\SL}{SL} % special linear group
+% \DeclareMathOperator{\SO}{SO} % special orthognal group
+% \DeclareMathOperator{\OO}{O} % orthognal group
+% \DeclareMathOperator{\PGL}{PGL} % projective linear group
+\DeclareMathOperator{\Hom}{Hom} % group of homomorphisms
+\DeclareMathOperator{\Iso}{Iso}
+\DeclareMathOperator{\sHom}{\mf{Hom}} % sheaf hom
+\DeclareMathOperator{\Aut}{Aut} % group of automorphisms
+\DeclareMathOperator{\End}{End} % set of endomorphisms
+\DeclareMathOperator{\orb}{orb} % orbit
+\DeclareMathOperator{\stab}{stab} % stabilizer
+\DeclareMathOperator{\im}{Im} % image -- \Im = imaginary component
+\DeclareMathOperator{\tr}{tr} % trace
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\ch}{char} % characteristic of a ring
+\DeclareMathOperator{\Homeo}{Homeo} % group of homeomorphisms
+\DeclareMathOperator{\Diff}{Diff} % group of diffeomorphisms
+\DeclareMathOperator{\Mat}{Mat} % matrix ring
+\DeclareMathOperator{\vol}{vol} % volume
+\DeclareMathOperator{\Int}{int} % interior
+\DeclareMathOperator{\ev}{ev} % evaluation map
+\DeclareMathOperator{\Rm}{Rm} % The (4, 0) curvature tensor given by Rm(X, Y, Z, W) := g(R(X, Y)Z, W), where R is Riemannian curvature
+\DeclareMathOperator{\Ric}{Ric} % Ricci (2, 0) curvature tensor
+% \DeclareMathOperator{\sec}{sec} % sectional curvature
+% \DeclareMathOperator{\scal}{scal} % scalar curvature
+\DeclareMathOperator{\Span}{span} % need capitol letter S since \span is a LaTeX specific keyword
+\DeclareMathOperator{\supp}{supp} % support -- as in, say, compact suppot
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\id}{id} % identity
+\DeclareMathOperator{\pr}{pr} % projection map
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\pre}{pre} % could be used when talking about presheaves
+\DeclareMathOperator{\Alt}{Alt} % alternating map
+\DeclareMathOperator{\Bilin}{Bilin} % set of bilinear maps
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\esssup}{esssup}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\Pin}{Pin}
+\DeclareMathOperator{\Spin}{Spin}
+\DeclareMathOperator{\AC}{AC}
+\DeclareMathOperator{\BV}{BV}
+\DeclareMathOperator{\ab}{ab}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\err}{err}
+\DeclareMathOperator{\op}{op}
+\DeclareMathOperator{\inv}{inv}
+\DeclareMathOperator{\Lin}{Lin}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\adj}{adj}
+
+\DeclareMathOperator{\Gr}{Gr}
+
+\DeclareMathOperator{\crit}{crit}
+\DeclareMathOperator{\Hess}{Hess}
+\DeclareMathOperator{\Der}{Der}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Sym}{Sym}
+% \DeclareMathOperator{\adj}{adj}
+
+\DeclareMathOperator{\Div}{Div}
+
+
+% Useful for layout
+\newcommand{\VF}{\vspace*{\fill}} % Vertical space fill
+\newcommand{\HF}{\hspace*{\fill}} % Horizontal space fill
